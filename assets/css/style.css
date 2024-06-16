@@ -85,6 +85,9 @@ button, input {
 }
 
 /* navbar */
+.collapse:not(.show) {
+    display: block;
+}
 
 #navbar{
     height: auto;
@@ -449,55 +452,3 @@ button, input {
     color: #f26957;
 }
 
-/* resposive */
-@media (max-width:992px) {
-    #search input  {
-        width: 70%;
-    }
-    #content-share {
-        margin-top: 10px;
-    }
-}
-@media (max-width: 768px){
-    #logo img {
-        width: 50%;
-    }
-
-    .menu-item {
-        float: none;
-        list-style: none;
-        height: 50px;
-        line-height: 50px;
-        padding-right: 20px;
-    }
-    .navbar-res{
-        display: block;
-        position: absolute;
-        top: 30px;
-        right: 0;
-        background: linear-gradient(to right, #eb0e86, #F48378);
-    }
-
-    .navbar-pc{
-        display: none;
-    }
-
-    #login-cart {
-        text-align: left;
-    }
-
-    #procedure,
-    #partner,
-    #user-vip 
-    {
-        display: none;
-    }
-
-    #footer-bottom p{
-        margin: 0;
-    }
-
-    #footer-bottom p:last-child {
-        float: left;
-    }
-}
